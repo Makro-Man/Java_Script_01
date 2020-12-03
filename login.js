@@ -16,3 +16,24 @@ if (login == "Admin"){
 }else {
     console.log("Canceled.")
 }
+
+console.log("");
+
+switch (login) {
+    case "Admin":{
+        switch (password) {
+            case "TheMaster":
+                console.log("Welcome!");
+                break;
+            case "Other":
+                console.log("Wrong password");
+                break;
+            default: console.log("Canceled.");
+        }
+        break;
+    }
+    case "Other":
+        console.log("I dont know you");
+        break;
+   default: console.log("Canceled.");
+}
